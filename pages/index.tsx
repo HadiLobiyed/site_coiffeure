@@ -9,7 +9,7 @@ export default function HomePage() {
     <Layout variant="client">
       <section className="relative overflow-hidden rounded-3xl border border-zinc-200/70 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
         <div className="relative grid min-h-[420px] sm:min-h-[520px] lg:grid-cols-2">
-          <div className="relative">
+          <div className="relative min-h-[420px] sm:min-h-[520px]">
             <Image
               src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Salon de coiffure"
