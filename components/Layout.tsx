@@ -86,9 +86,12 @@ export function Layout({
             <p className="font-medium text-zinc-700 dark:text-zinc-300">
               Coiffeur à domicile
             </p>
-            <p className="mt-1">
-              © {new Date().getFullYear()} • Prise de rendez-vous en ligne
-            </p>
+           <p className="mt-1">
+  © {new Date().getFullYear()} • Coiffeur By  •{" "}
+  <a href="https://noblexagency.vercel.app/" className="text-blue-500 hover:underline">
+    Noblex
+  </a>
+</p>
           </div>
           <div className="flex flex-wrap gap-3 md:justify-end">
             <SocialLink href="https://facebook.com" title="Facebook" icon="facebook" />
