@@ -1,0 +1,46 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Barber {
+  id       String @id @default(cuid())
+  email    String @unique
+  password String
+  timezone String @default("Africa/Algiers")
+
+  availabilities Availability[]
+  appointments   Appointment[]
+}
+
+model Availability {
+  id        String @id @default(cuid())
+  barberId  String
+  day       Int // 1..7 (Mon..Sun)
+  startHour String // "09:00"
+  endHour   String // "18:00"
+
+  barber Barber @relation(fields: [barberId], references: [id], onDelete: Cascade)
+
+  @@unique([barberId, day, startHour, endHour])
+  @@index([barberId, day])
+}
+
+model Appointment {
+  id       String   @id @default(cuid())
+  barberId String
+  name     String
+  lastname String
+  phone    String
+  persons  Int      @default(1)
+  address  String
+  date     DateTime
+
+  barber Barber @relation(fields: [barberId], references: [id], onDelete: Cascade)
+
+  @@index([barberId, date])
+  @@unique([barberId, date])
+}
