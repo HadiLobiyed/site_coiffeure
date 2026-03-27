@@ -11,7 +11,7 @@ export default function HomePage() {
         <div className="relative grid min-h-[420px] sm:min-h-[520px] lg:grid-cols-2">
           <div className="relative">
             <Image
-              src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c?auto=format&fit=crop&w=1400&q=80"
+              src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Salon de coiffure"
               fill
               className="object-cover"
@@ -112,11 +112,11 @@ export default function HomePage() {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {[
             "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80",
-            "https://images.unsplash.com/photo-1520975958225-cc55f218e4c7?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1635273051839-003bf06a8751?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=1200&q=80",
-            "https://images.unsplash.com/photo-1520975682238-1c76d6f8f4f8?auto=format&fit=crop&w=1200&q=80",
+            "https://plus.unsplash.com/premium_photo-1677098576397-d3403bf838a0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1200&q=80",
-            "https://images.unsplash.com/photo-1610395219791-21b03579f2e3?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1647140655214-e4a2d914971f?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           ].map((src, idx) => (
             <div
               key={src}
